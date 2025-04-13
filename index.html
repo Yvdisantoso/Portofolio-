@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      backdrop-filter: brightness(0.6);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: rgba(0, 100, 0, 0.7);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+      animation: popIn 1s ease;
+    }
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #d4edda;
+      border-bottom: 2px solid #c3e6cb;
+      padding-bottom: 0.5rem;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #fff;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    footer {
+      background-color: rgba(0, 100, 0, 0.6);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #c3e6cb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/120" alt="Foto Profil" />
+    <h1>Nama Kamu</h1>
+    <p>Frontend Developer | Pecinta Alam</p>
+  </header>  <section>
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah web developer yang terinspirasi oleh keindahan alam. Saya percaya bahwa desain terbaik datang dari harmoni dengan lingkungan sekitar.</p>
+  </section>  <section>
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Desain Alam</div>
+    </div>
+  </section>  <section>
+    <h2>Proyek</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Website Toko Tanaman</h3>
+        <p>Toko online tanaman hias dengan nuansa hijau alami.</p>
+      </div>
+      <div class="card">
+        <h3>Peta Interaktif</h3>
+        <p>Peta wisata alam interaktif dengan React dan LeafletJS.</p>
+      </div>
+    </div>
+  </section>  <section>
+    <h2>Kontak</h2>
+    <p>Email: kamu@email.com</p>
+    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+  </section>  <footer>
+    &copy; 2025 Nama Kamu. Didesain dengan inspirasi dari alam.
+  </footer>
+</body>
+</html>
